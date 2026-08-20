@@ -1,0 +1,6 @@
+# Core. For the audio pipeline also install the [audio] and [text] extras
+# from pyproject.toml (librosa, soundfile, torchaudio, transformers).
+numpy>=2.0
+pandas>=2.2
+scikit-learn>=1.4
+torch>=2.4
