@@ -1,54 +1,27 @@
-# Environments and caches
-.venv/
-.venv-opera/
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.ipynb_checkpoints/
-.ruff_cache/
-.DS_Store
-.codex/
-
-# Data. Nothing under data/ is committed: three of the four corpora are
-# third-party redistributions, COPDGene is controlled-access, and the audio
-# alone is >2 GB. Manifests are excluded too, since they carry patient-level
-# age, sex and diagnosis; the preprocessing scripts rebuild them.
 data/*
 !data/README.md
+cache/
+results*/
 
-# Teacher representations and bridge targets are derived from controlled-access
-# subjects and must not leave the study.
+# teacher representations and bridge targets come from controlled-access subjects
 **/distillation/
 *_targets*.npy
-*_bridge_audit*.json
-
-# Run outputs: model checkpoints and per-patient predictions. Aggregate tables
-# meant for release go in paper/tables/ instead.
-results*/
-cache/*
-!cache/.gitkeep
 
 *.pth
 *.pt
 *.ckpt
 *.safetensors
 *.npz
-
-# Machine-specific
-configs/*.server.json
-.overnight/
-.ablation/
-.randteacher/
-log_*.log
-nohup.out
-archive/
-
-# LaTeX build products
-*.aux
-*.bbl
-*.blg
 *.log
-*.out
-*.synctex.gz
-*.fdb_latexmk
-*.fls
+nohup.out
+
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+.ruff_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

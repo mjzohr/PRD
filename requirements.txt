@@ -1,6 +1,12 @@
-# Core. For the audio pipeline also install the [audio] and [text] extras
-# from pyproject.toml (librosa, soundfile, torchaudio, transformers).
+torch>=2.4
+torchaudio>=2.4
 numpy>=2.0
 pandas>=2.2
+scipy>=1.11
 scikit-learn>=1.4
-torch>=2.4
+librosa>=0.11
+soundfile>=0.13
+tqdm>=4.66
+transformers>=4.49
+matplotlib>=3.8
+optuna>=4.0
